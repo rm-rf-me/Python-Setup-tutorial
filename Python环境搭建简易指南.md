@@ -530,7 +530,103 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * Pycharm是jetbrains公司开发包中的主要产品之一，分为社区版和专业版两种。通过学生认证，如教育邮箱、学信网或github学生开发认证可以免费解锁jetbrains全家桶，可以免费使用专业版的pycharm。而社区版则直接免费提供给个人用户使用。
 
-#### 8.1.2.
+#### 8.1.2.版本控制配置
+
+我个人习惯使用git，这里简单介绍git的配置。
+
+* 如果没有安装过则来到[官网](https://git-scm.com/downloads)下载git。
+
+* 成功安装后并添加环境变量，终端输入git --version验证安装结果。
+
+* 通常情况下pycharm会自动识别git的位置，可以在setting中查看：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317150823068.png" alt="image-20210317150823068" style="zoom:50%;" />
+
+* git配置成功之后，我们来到setting/Version Control/GitHub绑定github账号。较老的pycharm会采用账号密码验证，而新的版本会直接跳转到jetbrains绑定：
+
+  ![image-20210317151024966](C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317151024966.png)
+
+* 成功后回到setting中即可看到我们的账户：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317151101848.png" alt="image-20210317151101848" style="zoom:50%;" />
+
+#### 8.1.3.版本控制使用
+
+* 我们以本次教程为例，首先打开本教程文件夹：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317151255000.png" alt="image-20210317151255000" style="zoom:50%;" />
+
+* 在上面的VSC菜单中可以找到创建git仓库的选项：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317151351686.png" alt="image-20210317151351686" style="zoom:50%;" />
+
+* 创建成功之后我们会发下有以下几个变化：
+
+  1. 文件变为红色，代表没有add过。
+  2. 菜单栏出现Git选项，里面包含了常用的commit、push、pull以及分支控制等选项。
+  3. 下面标签页出现Git选项，其中有控制台、log等内容。
+  4. 屏幕右下角标注了master，代表当前使用的分支名称。
+
+  
+
+  ![image-20210317151553713](C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317151553713.png)
+
+* 我们右键某个选中文件后也会出现git的相关操作选项，如add、push等：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317151851254.png" alt="image-20210317151851254" style="zoom:50%;" />
+
+* add之后文件变为绿色，代表添加未提交。我们可以通过commit提交：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317152030319.png" alt="image-20210317152030319" style="zoom:50%;" />
+
+* 提交后文件变为白色。我们还可以在Git选项中将本教程分享到github远程仓库中：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317152206875.png" alt="image-20210317152206875" style="zoom:50%;" />
+
+* 设置仓库信息，成功绑定后我们就可以进行push等操作。
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317152415524.png" alt="image-20210317152415524" style="zoom:50%;" />
+
+* 最终完成的结果：
+
+  ![image-20210317153631176](C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317153631176.png)
+
+#### 8.1.4.代理设置
+
+* 进入setting/Appearance&Behavior/System Settings/HTTP Proxy进行代理设置
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317154052460.png" alt="image-20210317154052460" style="zoom:50%;" />
+
+#### 8.1.5.插件
+
+* 进入设置中的Plugins中即可选择插件并安装，这里推荐几个常用插件：
+
+  ![image-20210317154330362](C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317154330362.png)
+
+#### 8.1.6.解释器选择
+
+* 如6.4节所述，我们需要在运行前绑定运行环境。具体在setting中Project/Python Interpreter中，默认采用默认的python环境：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317155014287.png" alt="image-20210317155014287" style="zoom:50%;" />
+
+* 我们选择add一个已有环境，浏览找到前文说的解释器的具体位置，点击确定：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317155220709.png" alt="image-20210317155220709" style="zoom:50%;" />
+
+* 之后就可以看到我们当前环境的包信息了：
+
+  <img src="C:\Users\11274\AppData\Roaming\Typora\typora-user-images\image-20210317155252823.png" alt="image-20210317155252823" style="zoom:50%;" />
 
 
+
+除此之外，大家还可以添加其他更多工具、添加快捷键、添加自动代码段等内容。
+
+
+
+
+
+
+当前为初稿，我还没有进行详细的排版和审核。所以如果发现任何内容、排版、编写上的问题或者有任何建议欢迎到我的[github](https://github.com/rm-rf-me/Python-Setup-tutorial)上提出issue指正，我会尽快做出完善。
+
+>  --ljc
 
