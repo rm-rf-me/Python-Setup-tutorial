@@ -1,5 +1,5 @@
 ---
-typora-root-url: pic
+
 ---
 
 # Python环境搭建简易指南
@@ -58,14 +58,14 @@ pip和conda两者都有各自的优势，并且我们知道其包含关系为：
 
   * Win10用户在开始选项旁边的搜索栏搜索cmd后选择打开即可。
 
-    ​							<img src=".\image-20210316143243638.png" alt="image-20210316143243638" style="zoom: 50%;" />
+    ​							<img src=".\pic\image-20210316143243638.png" alt="image-20210316143243638" style="zoom: 50%;" />
 
   * Mac用户在系统工具中打开“终端”工具。
   * Ubuntu用户在导航页打开“Terminal”工具。
 
 * 打开之后即可得到如下页面，图中为Win10的cmd：
 
-  ![image-20210316143539580](.\image-20210316143539580.png)
+  ![image-20210316143539580](.\pic\image-20210316143539580.png)
 
 * 需要注意的是，图中"C:\Users\11274"为当前用户的文件夹，“11274”为当前用户名，如果这个用户名被设置成了中文，将无法正常使用某些python包。我个人建议将其修改为英文或数字，具体的修改方法可以参考[这里](https://www.zhihu.com/question/37082172)，需要使用管理员登陆系统并更改注册表。注意如果操作不当可能会影响个人文件甚至是系统信息，需要谨慎处理。可以先创建一个新的用户进行试验，如果改名失败也不会影响之前的老用户。
 
@@ -143,19 +143,19 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * 搜索环境变量：
 
-  <img src=".\image-20210317085636782.png" alt="image-20210317085636782" style="zoom:50%;" />
+  <img src=".\pic\image-20210317085636782.png" alt="image-20210317085636782" style="zoom:50%;" />
 
 * 进入后点击环境变量
 
-  <img src=".\image-20210317085736497.png" alt="image-20210317085736497" style="zoom:50%;" />
+  <img src=".\pic\image-20210317085736497.png" alt="image-20210317085736497" style="zoom:50%;" />
 
 * 我们直接将想要添加的环境变量加入到"系统变量"中的"Path"中：
 
-  <img src=".\image-20210317085911796.png" alt="image-20210317085911796" style="zoom:50%;" />
+  <img src=".\pic\image-20210317085911796.png" alt="image-20210317085911796" style="zoom:50%;" />
 
 * 打开Path后，选择添加，输入要添加的环境变量，确定退出即可：
 
-  <img src=".\image-20210317090021374.png" alt="image-20210317090021374" style="zoom:50%;" />
+  <img src=".\pic\image-20210317090021374.png" alt="image-20210317090021374" style="zoom:50%;" />
 
 #### 4.4.4.Mac/Linux添加环境变量
 
@@ -208,7 +208,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * .exe安装较为简单，过程中遇到如下界面记得勾选第一项，就可以自动添加环境变量。第二项推荐勾选。
 
-  <img src=".\image-20210317093640281.png" alt="image-20210317093640281" style="zoom:50%;" />
+  <img src=".\pic\image-20210317093640281.png" alt="image-20210317093640281" style="zoom:50%;" />
 
 * 安装完成后，打开cmd，输入
 
@@ -230,19 +230,19 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * 回车后输入密码：
 
-<img src=".\image-20210317101539525.png" alt="image-20210317101539525" style="zoom:50%;" />
+<img src=".\pic\image-20210317101539525.png" alt="image-20210317101539525" style="zoom:50%;" />
 
 * 回车后出现用户协议，浏览结束后输入yes同意。然后会提示选择安装目录，注意这里默认安装位置在root目录下，该目录进行操作时需要开权限，所以建议更改到个人目录或者其他目录下。之后等待安装：
 
-  <img src=".\image-20210317101901676.png" alt="image-20210317101901676" style="zoom:50%;" />
+  <img src=".\pic\image-20210317101901676.png" alt="image-20210317101901676" style="zoom:50%;" />
 
 * 安装结束后，会提示时候需要初始化conda，此处建议选择yes。如果选no则需要根据提示和前文方法手动配置环境变量。
 
-  <img src=".\image-20210317102322645.png" alt="image-20210317102322645" style="zoom:50%;" />
+  <img src=".\pic\image-20210317102322645.png" alt="image-20210317102322645" style="zoom:50%;" />
 
 * 出现安装成功提示后，会推荐安装vs coda，此处根据个人需求选择。
 
-  <img src=".\image-20210317102108603.png" alt="image-20210317102108603" style="zoom:50%;" />
+  <img src=".\pic\image-20210317102108603.png" alt="image-20210317102108603" style="zoom:50%;" />
 
 * 安装结束后，输入conda --version得到版本即代表安装成功。
 
@@ -263,7 +263,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   添加后我们所以安装一个包进行测试：
 
-  ![image-20210317103853536](.\image-20210317103853536.png)
+  ![image-20210317103853536](.\pic\image-20210317103853536.png)
 
   可以看到安装包的源头都变成了清华源。
 
@@ -277,7 +277,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   即可看到当前创建的所有虚拟环境，其中base为默认环境，在未创建或未切换时会使用这个环境。星号标注了当前启用的环境：
 
-  <img src=".\image-20210317104237873.png" alt="image-20210317104237873" style="zoom:50%;" />
+  <img src=".\pic\image-20210317104237873.png" alt="image-20210317104237873" style="zoom:50%;" />
 
 * 创建虚拟环境：使用命令：
 
@@ -287,7 +287,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   其中，--name指定了新环境的名称，后面括号内的内容为可选项，即可以在创建的同时指定python环境、预装包等操作。如果不指定则会创建一个空的环境。如我们建立一个名为Test的新环境：
 
-  <img src=".\image-20210317104825452.png" alt="image-20210317104825452" style="zoom:50%;" />
+  <img src=".\pic\image-20210317104825452.png" alt="image-20210317104825452" style="zoom:50%;" />
 
 * 切换虚拟环境：成功创建环境后会出现切换命令的提示，Windows和Linux会有不同。
 
@@ -307,11 +307,11 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   切换后命令提示前会出现(Test)标识，再次查看conda env list可以发现星号的变化：
 
-  <img src=".\image-20210317105419897.png" alt="image-20210317105419897" style="zoom:50%;" />
+  <img src=".\pic\image-20210317105419897.png" alt="image-20210317105419897" style="zoom:50%;" />
 
 * 删除虚拟环境：注销环境后，使用remove命令：
 
-  <img src=".\image-20210317105841836.png" alt="image-20210317105841836" style="zoom:50%;" />
+  <img src=".\pic\image-20210317105841836.png" alt="image-20210317105841836" style="zoom:50%;" />
 
   
 
@@ -319,7 +319,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * 搜索包：使用命令conda search搜索指定包，查看该包的基本信息：
 
-  ![image-20210317110439133](.\image-20210317110439133.png)
+  ![image-20210317110439133](.\pic\image-20210317110439133.png)
 
 * 安装包：使用命令：
 
@@ -329,11 +329,11 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   其中的版本号为可选内容。注意conda安装包前会使用算法搜索版本依赖，如果不指定版本就不能控制conda安装的版本，同时会加大搜索空间的范围，这一点后面会提到。此外，conda会根据包的版本依赖增加甚至更改相关包，所以每次的解析结果中会出现多个包的安装以及版本变更。
 
-  <img src=".\image-20210317110837888.png" alt="image-20210317110837888" style="zoom:50%;" />
+  <img src=".\pic\image-20210317110837888.png" alt="image-20210317110837888" style="zoom:50%;" />
 
 * 查看包：使用命令conda list可以查看当前环境的所有包：
 
-  ![image-20210317111007560](.\image-20210317111007560.png)
+  ![image-20210317111007560](.\pic\image-20210317111007560.png)
 
 ### 6.4.找到你的虚拟环境的解释器
 
@@ -341,11 +341,11 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * 我们需要先找到环境位置，Windows一般位于anaconda安装目录下的envs目录中，而Linux通常在.conda目录的envs目录中。我们可以通过conda env list查看该虚拟环境的位置，如图：
 
-  ![image-20210317112121924](.\image-20210317112121924.png)
+  ![image-20210317112121924](.\pic\image-20210317112121924.png)
 
   在Windows下，解释器就在该目录下，如图找到这个python.exe即可：
 
-  <img src=".\image-20210317112440631.png" alt="image-20210317112440631" style="zoom:50%;" />
+  <img src=".\pic\image-20210317112440631.png" alt="image-20210317112440631" style="zoom:50%;" />
 
   而在Linux中，解释器在该目录下的bin目录中，也是一个python加版本号的可执行文件。
 
@@ -399,53 +399,53 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * 如果显卡驱动正常工作，则开始安装CUDA，来到[官网](https://developer.nvidia.com/zh-cn/cuda-downloads)，选择对应的与驱动想配套的CUDA版本进行下载，注意选择离线版本：
 
-  <img src=".\image-20210317124505461.png" alt="image-20210317124505461" style="zoom:50%;" />
+  <img src=".\pic\image-20210317124505461.png" alt="image-20210317124505461" style="zoom:50%;" />
 
 * 下载成功后进入下载器，注意选择自定义安装：
 
-  <img src=".\image-20210317125045070.png" alt="image-20210317125045070" style="zoom:50%;" />
+  <img src=".\pic\image-20210317125045070.png" alt="image-20210317125045070" style="zoom:50%;" />
 
   其中的Nsight是CUDA的开发工具，我们通常不会使用。有些情况下安装时Visual Studio Intergration会报错，可以取消这个选项。
 
-  <img src=".\image-20210317125737552.png" alt="image-20210317125737552" style="zoom:50%;" />
+  <img src=".\pic\image-20210317125737552.png" alt="image-20210317125737552" style="zoom:50%;" />
 
   除此之外的其他组件大家按需安装：
 
-  <img src=".\image-20210317125905366.png" alt="image-20210317125905366" style="zoom:50%;" />
+  <img src=".\pic\image-20210317125905366.png" alt="image-20210317125905366" style="zoom:50%;" />
 
   之后确定路径之后开始安装即可。安装完成后，进入cmd输入nvcc --version，返回版本即可：
 
-  <img src=".\image-20210317130332758.png" alt="image-20210317130332758" style="zoom:50%;" />
+  <img src=".\pic\image-20210317130332758.png" alt="image-20210317130332758" style="zoom:50%;" />
 
 #### 7.1.3.cuDNN
 
 * 首先来到[官网](https://developer.nvidia.com/rdp/cudnn-download)，注意cnDNN的下载需要登陆Nvidia账号，如果还没有账号需要先注册。认证成功后即可选择下载版本：
 
-  <img src=".\image-20210317131328179.png" alt="image-20210317131328179" style="zoom:50%;" />
+  <img src=".\pic\image-20210317131328179.png" alt="image-20210317131328179" style="zoom:50%;" />
 
 * 下载成功后解压压缩包，得到如下内容：
 
-  <img src=".\image-20210317132248038.png" alt="image-20210317132248038" style="zoom:50%;" />
+  <img src=".\pic\image-20210317132248038.png" alt="image-20210317132248038" style="zoom:50%;" />
 
 * cuDNN相当于对CUDA的一个神经网络补丁，所以我们只需要将补丁内的东西移动到CUDA目录下。我们找到CUDA的安装路径，默认应该为C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1：
 
-  <img src=".\image-20210317132524278.png" alt="image-20210317132524278" style="zoom:50%;" />![image-20210317133008960](.\image-20210317133008960.png)
+  <img src=".\pic\image-20210317132524278.png" alt="image-20210317132524278" style="zoom:50%;" />![image-20210317133008960](.\pic\image-20210317133008960.png)
 
 * 所以我们就把cuDNN中三个文件夹的内容对应的移动到CUDA路径下，注意一定要对应，如bin移动到bin，lib移动到lib。
 
-  <img src=".\image-20210317132744853.png" alt="image-20210317132744853" style="zoom:50%;" />
+  <img src=".\pic\image-20210317132744853.png" alt="image-20210317132744853" style="zoom:50%;" />
 
 * 之后我们验证是否安装成功，来到CUDA安装目录的extras\demo_suite文件夹中，
 
-  ![image-20210317133008960](.\image-20210317133008960.png)
+  ![image-20210317133008960](.\pic\image-20210317133008960.png)
 
 * 我们拷贝这个路径，进入cmd，cd到此处，首先运行deviceQuery.exe：
 
-  ![image-20210317133213837](.\image-20210317133213837.png)
+  ![image-20210317133213837](.\pic\image-20210317133213837.png)
 
   注意最后的Result=Pass代表成功。然后运行bandwidthTest.exe，同样注意Result=Pass。
 
-  ![image-20210317133328847](.\image-20210317133328847.png)
+  ![image-20210317133328847](.\pic\image-20210317133328847.png)
 
   如果验证成功，则证明显卡环境配置成功。
 
@@ -489,7 +489,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 * Ubuntu20自带的gcc版本为9.7，通常建议先降级到gcc7，虽然我也尝试使用gcc9成功安装。但是在安装过程中会出现更多的配置选项。
 * 使用sudo sh运行脚本，CUDA会自带显卡驱动，所以在安装是取消Driver的选项。
 
-<img src=".\image-20210317142146181.png" alt="image-20210317142146181" style="zoom:50%;" />
+<img src=".\pic\image-20210317142146181.png" alt="image-20210317142146181" style="zoom:50%;" />
 
 * 安装过程中同样会出现一些配置选项，大家根据内容百度选择即可。
 * 结束后使用nvcc -V命令测试。
@@ -508,7 +508,7 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   解析完成后输入y开始安装：
 
-  ![image-20210317134621160](.\image-20210317134621160.png)
+  ![image-20210317134621160](.\pic\image-20210317134621160.png)
 
 * 安装成功后，我们直接在命令行输入python进入交互式解释器，然后逐行输入pytorch设备测试代码：
 
@@ -544,25 +544,25 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
 * 通常情况下pycharm会自动识别git的位置，可以在setting中查看：
 
-  <img src=".\image-20210317150823068.png" alt="image-20210317150823068" style="zoom:50%;" />
+  <img src=".\pic\image-20210317150823068.png" alt="image-20210317150823068" style="zoom:50%;" />
 
 * git配置成功之后，我们来到setting/Version Control/GitHub绑定github账号。较老的pycharm会采用账号密码验证，而新的版本会直接跳转到jetbrains绑定：
 
-  ![image-20210317151024966](.\image-20210317151024966.png)
+  ![image-20210317151024966](.\pic\image-20210317151024966.png)
 
 * 成功后回到setting中即可看到我们的账户：
 
-  <img src=".\image-20210317151101848.png" alt="image-20210317151101848" style="zoom:50%;" />
+  <img src=".\pic\image-20210317151101848.png" alt="image-20210317151101848" style="zoom:50%;" />
 
 #### 8.1.3.版本控制使用
 
 * 我们以本次教程为例，首先打开本教程文件夹：
 
-  <img src=".\image-20210317151255000.png" alt="image-20210317151255000" style="zoom:50%;" />
+  <img src=".\pic\image-20210317151255000.png" alt="image-20210317151255000" style="zoom:50%;" />
 
 * 在上面的VSC菜单中可以找到创建git仓库的选项：
 
-  <img src=".\image-20210317151351686.png" alt="image-20210317151351686" style="zoom:50%;" />
+  <img src=".\pic\image-20210317151351686.png" alt="image-20210317151351686" style="zoom:50%;" />
 
 * 创建成功之后我们会发下有以下几个变化：
 
@@ -573,53 +573,53 @@ Vim的熟练使用需要一定的记忆和大量的练习，上手难度较高�
 
   
 
-  ![image-20210317151553713](.\image-20210317151553713.png)
+  ![image-20210317151553713](.\pic\image-20210317151553713.png)
 
 * 我们右键某个选中文件后也会出现git的相关操作选项，如add、push等：
 
-  <img src=".\image-20210317151851254.png" alt="image-20210317151851254" style="zoom:50%;" />
+  <img src=".\pic\image-20210317151851254.png" alt="image-20210317151851254" style="zoom:50%;" />
 
 * add之后文件变为绿色，代表添加未提交。我们可以通过commit提交：
 
-  <img src=".\image-20210317152030319.png" alt="image-20210317152030319" style="zoom:50%;" />
+  <img src=".\pic\image-20210317152030319.png" alt="image-20210317152030319" style="zoom:50%;" />
 
 * 提交后文件变为白色。我们还可以在Git选项中将本教程分享到github远程仓库中：
 
-  <img src=".\image-20210317152206875.png" alt="image-20210317152206875" style="zoom:50%;" />
+  <img src=".\pic\image-20210317152206875.png" alt="image-20210317152206875" style="zoom:50%;" />
 
 * 设置仓库信息，成功绑定后我们就可以进行push等操作。
 
-  <img src=".\image-20210317152415524.png" alt="image-20210317152415524" style="zoom:50%;" />
+  <img src=".\pic\image-20210317152415524.png" alt="image-20210317152415524" style="zoom:50%;" />
 
 * 最终完成的结果：
 
-  ![image-20210317153631176](.\image-20210317153631176.png)
+  ![image-20210317153631176](.\pic\image-20210317153631176.png)
 
 #### 8.1.4.代理设置
 
 * 进入setting/Appearance&Behavior/System Settings/HTTP Proxy进行代理设置
 
-  <img src=".\image-20210317154052460.png" alt="image-20210317154052460" style="zoom:50%;" />
+  <img src=".\pic\image-20210317154052460.png" alt="image-20210317154052460" style="zoom:50%;" />
 
 #### 8.1.5.插件
 
 * 进入设置中的Plugins中即可选择插件并安装，这里推荐几个常用插件：
 
-  ![image-20210317154330362](.\image-20210317154330362.png)
+  ![image-20210317154330362](.\pic\image-20210317154330362.png)
 
 #### 8.1.6.解释器选择
 
 * 如6.4节所述，我们需要在运行前绑定运行环境。具体在setting中Project/Python Interpreter中，默认采用默认的python环境：
 
-  <img src=".\image-20210317155014287.png" alt="image-20210317155014287" style="zoom:50%;" />
+  <img src=".\pic\image-20210317155014287.png" alt="image-20210317155014287" style="zoom:50%;" />
 
 * 我们选择add一个已有环境，浏览找到前文说的解释器的具体位置，点击确定：
 
-  <img src=".\image-20210317155220709.png" alt="image-20210317155220709" style="zoom:50%;" />
+  <img src=".\pic\image-20210317155220709.png" alt="image-20210317155220709" style="zoom:50%;" />
 
 * 之后就可以看到我们当前环境的包信息了：
 
-  <img src=".\image-20210317155252823.png" alt="image-20210317155252823" style="zoom:50%;" />
+  <img src=".\pic\image-20210317155252823.png" alt="image-20210317155252823" style="zoom:50%;" />
 
 
 
